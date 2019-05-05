@@ -3,6 +3,7 @@
   <tbody id="titles">
     <tr id="post_num-<%=post.id%>">
       <td><%= post.title %></td>
+      <td><img src="<%= post.photo.thumb %>"></td>
       <td><%= link_to 'Show', post %></td>
       <td><%= link_to 'Edit', edit_post_path(post) %></td>
       <td><%= link_to 'Destroy', post, method: :delete, remote: true, data: { confirm: 'Are you sure?' } %></td>
